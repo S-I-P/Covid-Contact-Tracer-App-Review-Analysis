@@ -1,0 +1,9 @@
+google-play-scraper
+openpyxl
+googletrans==3.1.0a0
+demoji
+nltk
+pandas
+gensim==4.3.0
+'transformers[torch]'
+scikit-learn==1.2.2
