@@ -54,7 +54,7 @@ Here, the data argument refers to the preprocessed data mentioned above.
 
 ## LDA Topic Modeling
 * Train [gensim](https://radimrehurek.com/gensim/) LDA model
-* Change configuration (number of topics, parts of speech (POS), and use_translated) for LDA model training in [config.json](preprocessed/config.json). Number of topic options; "Topics" is an array of numbers. POS can be an empty array for all POS or an array of selected POS from the 12 possible POS in the NLTK universal tagset, e.g., ["NOUN", "VERB", "ADJ"].
+* Change configuration (number of topics, parts of speech (POS), and use_translated) for LDA model training in [config.json](LDA/config.json). Number of topic options; "Topics" is an array of numbers. POS can be an empty array for all POS or an array of selected POS from the 12 possible POS in the NLTK universal tagset, e.g., ["NOUN", "VERB", "ADJ"].
 
 Run:
 ```
@@ -74,7 +74,7 @@ python assignTopics.py --model <model_file> --out <output-directory> --data <dat
 * The model parameter is for saved LDA model, and seed parameter is to create the model with a particular seed.
 * The base_topics file contains the n number of topic labels, and the hierarchy file is for assigning each topic to further sub-categories and categories.
 * [Labelled topics](https://drive.google.com/drive/folders/14TlxuVA9t-3aFIDiwibTsA4hZkdo4wg2?usp=share_link)
-* The [models](https://drive.google.com/drive/folders/1lAmTE0YYa5eu7URSmVfl4J0qjQO1qFf-?usp=share_link) used for the above labelling
+* The [models](https://drive.google.com/drive/folders/1tHuXF7HvfYG22sO_wwsBG4N0hSxLJS7J?usp=drive_link) used for the above labelling
 
 ## Sentiment Analysis
 We annotated 7060 reviews for sentiment classification. We have used [train](SentimentAnalysis/train_data.xlsx) and [test](SentimentAnalysis/test_data.xlsx) set of sizes 5400 and 1660, respectively.
